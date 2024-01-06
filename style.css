@@ -3,7 +3,26 @@ html {
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+#year
+{
+  background-color:rebeccapurple;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+#submit
+{
+  background-color:rebeccapurple;/*Selim special color*/
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+}
 .count {
   font-weight: bolder;
   margin: 5px;
@@ -12,7 +31,14 @@ html {
   padding: 5px;
   font-family: 'Courier New', Courier, monospace;
 }
-
+.year {
+  font-weight: bolder;
+  margin: 5px;
+  background-color: red;
+  line-height: 200%;
+  padding: 5px;
+  
+}
 .words {
   font-weight: bolder;
   margin: 5px;
