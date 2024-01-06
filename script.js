@@ -1,10 +1,27 @@
+
 function secondsAway() {
   const currentDate = new Date();
   const eventDate = new Date("August 18, 2023 12:16:00-05:00");
-  const timeDiff = currentDate.getTime() - eventDate.getTime();
-  if (timeDiff < 0) {
-    return 0;
-  }
+  var timeDiff = currentDate.getTime() - eventDate.getTime();
+  
+
+  
+
+
+  
+    var extrayear=document.getElementById("year").value;
+    
+    if(extrayear<1956 )
+    {
+      //alert("are you idiot?");
+    }
+    else
+    {
+      timeDiff+=(2023-extrayear)*31536000000;
+    }
+
+  
+
   return timeDiff / 1000;
 }
 
@@ -37,7 +54,7 @@ function update() {
       "°",
   );
   //min wage 13.414tl
-  let money = Math.floor((seconds / (60 * 60 * 24 * 30)) * 13414 * 100) / 100;
+  let money = Math.floor((seconds / (60 * 60 * 24 * 30)) * 17002 * 100) / 100;
   setText("minwage", money + " TL");
 }
 
